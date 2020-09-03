@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>電卓</title>
-</head>
+<html lang="ja">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculation</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- js -->
+  <script src="script.js" defer></script>
 <body>
-  <input type="text" id="result">
+  
+  <input type="text" class="form-control" id="result" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
   <div>
-    <input type="button" value="1" onclick="edit(this)">
-    <input type="button" value="2" onclick="edit(this)">
-    <input type="button" value="3" onclick="edit(this)">
-    <input type="button" value="+" onclick="edit(this)">
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="7">7</button>
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="8">8</button>
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="9">9</button>
+    <button type="button" class="btn btn-outline-dark" onclick="edit(this)" value="/">÷</button>
   </div>
   <div>
-    <input type="button" value="4" onclick="edit(this)">
-    <input type="button" value="5" onclick="edit(this)">
-    <input type="button" value="6" onclick="edit(this)">
-    <input type="button" value="-" onclick="edit(this)">
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="4">4</button>
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="5">5</button>
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="6">6</button>
+    <button type="button" class="btn btn-outline-dark" onclick="edit(this)" value="*">×</button>
   </div>
   <div>
-    <input type="button" value="7" onclick="edit(this)">
-    <input type="button" value="8" onclick="edit(this)">
-    <input type="button" value="9" onclick="edit(this)">
-    <input type="button" value="/" onclick="edit(this)">
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="1">1</button>
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="2">2</button>
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="3">3</button>
+    <button type="button" class="btn btn-outline-dark" onclick="edit(this)" value="-">-</button>
   </div>
   <div>
-    <input type="button" value="0" onclick="edit(this)">
-    <input type="button" value="." onclick="edit(this)">
-    <input type="button" value="*" onclick="edit(this)">
-    <input type="button" value="=" onclick="calc()">
-    <input type="button" value="c" onclick="update('')">
+    <button type="button" class="btn btn-outline-primary" onclick="edit(this)" value="0">0</button>
+    <button type="button" class="btn btn-outline-dark" onclick="edit(this)" value=".">.</button>
+    <button type="button" class="btn btn-outline-info" onclick="calc()" value="=">=</button>
+    <button type="button" class="btn btn-outline-dark" onclick="edit(this)" value="+">+</button>
+    <button type="button" class="btn btn-outline-dark" onclick="update('')" value="c">c</button>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
