@@ -1,13 +1,40 @@
 @charset 'utf-8';
 
-
-.form-control {
-  width: 35%;
-  margin-top: 50px;
-  margin-bottom: 30px;
+body {
+  background-color: #d2b48c;
 }
 
-table {
-  width: 50%;
+.title {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 50px;
+  color: #666666;
+}
+
+.form-control {
+  width: 15%;
+  margin: 30px auto 30px;
+}
+
+.container {
   margin: 0 auto;
+  text-align: center;
+  width: 230px;
+}
+
+.left {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
 }
